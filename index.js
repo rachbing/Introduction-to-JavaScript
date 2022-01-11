@@ -19,7 +19,10 @@ Do the following:
 
    HINT: no function required
 */
-
+let votingAge = 18
+if (votingAge >= 18) {
+  console.log(true)
+}
 
 
 /*
@@ -32,7 +35,11 @@ Do the following:
 
    HINT: no function required
 */
-
+let myFriends = 3
+let Jessica = 'friend'
+if (Jessica === 'friend') {
+  myFriends = 4
+}
 
 
 
@@ -47,6 +54,9 @@ Do the following:
 
    HINT: look up the Number method
 */
+let year = '1999'
+year = 1999
+console.log(year)
 
 
 
@@ -60,9 +70,11 @@ Do the following:
    3. Multiply a and b and return the answer
 */
 
-function multiply(/*add your code here*/){
-  /*add your code here*/
+console.log(multiply(2,3))
+function multiply(a,b){
+  console.log(a * b)
 }
+
 
 
 
@@ -76,9 +88,11 @@ Do the following:
  3. Return the newly calculated age
 */
 
-function dogYears(/*add your code here*/){
-  /*add your code here*/
+function dogYears(num1, num2) {
+  return num1 * num2
 }
+dogYears(20, 7)
+
 
 
 
@@ -248,3 +262,4 @@ module.exports = {
   annoyingSong,
   grade
 }
+ß
