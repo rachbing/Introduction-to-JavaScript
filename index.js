@@ -19,9 +19,11 @@ Do the following:
 
    HINT: no function required
 */
-let votingAge = 18
+const votingAge = 18;
 if (votingAge >= 18) {
   console.log(true)
+} else {
+  console.log(false);
 }
 
 
@@ -35,12 +37,12 @@ Do the following:
 
    HINT: no function required
 */
-let yes = true
-let no = !yes
 
-console.log(no)
-
-
+let favFood = 'sushi';
+let hungerLevel = 'hungry';
+if(hungerLevel === 'hungry') {
+  favFood = 'pizza'
+}
 
 
 
@@ -119,24 +121,27 @@ Puppies less than 1 year
 NOTE: If done correctly, a weight of 15 lbs and age of 1 year would return 0.44999999999999996
 */  
 
-function hungryDog(age, weight){
-if (age >= 1 && weight < 5) {
-  return weight * .05
-} else if (age >= 1 && weight <= 10) {
-  return weight * .04
-} else if ( age >=1 && weight <= 15) {
-  return weight * .03
-} else if ( age >= 1 && weight > 15) {
-  return weight * .02
-} else if (age >= 0.167 && age < 0.333) {
-  return weight * .1
-} else if (age >= 0.333 && age < 0.583) {
-  return weight * .05
-} else if (age >= 0.583 && age < 1) {
-  return weight * .04
+function hungryDog(weight, age){
+if(age >= 1 && weight <= 5) {
+  return weight * 0.05;
+} else if(age >= 1 && weight >= 6 && weight <= 10) {
+  return weight * 0.04;
+} else if( age >=1 && weight >= 11 && weight <= 15) {
+  return weight * 0.03;
+} else if( age >= 1 && weight > 15) {
+  return weight * 0.02;
+} else if(age < 1 && age >= 0.583) {
+  return weight * 0.04;
+} else if(age < 0.583 && age >= 0.333) {
+  return weight * 0.05;
+} else if(age < 0.333) {
+  return weight * 0.10;
+} else {
+  return 'please try again';
 }
 }
 
+console.log('task 3', hungryDog(15,1))
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
@@ -201,9 +206,10 @@ Using the miles function below do the following:
 3. Return the number of miles
 */
 
-function miles(/*add your code here*/){
-  /*add your code here*/
+function miles(km) {
+    return km * 0.621371;
 }
+
 
 
 
@@ -215,10 +221,9 @@ Using the feet function below do the following:
 3. Return number of feet
 */
 
-function feet(/*add your code here*/){
-  /*add your code here*/
+function feet(cm) {
+    return cm / 30.48;
 }
-
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
