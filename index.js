@@ -35,11 +35,12 @@ Do the following:
 
    HINT: no function required
 */
-let myFriends = 3
-let Jessica = 'friend'
-if (Jessica === 'friend') {
-  myFriends = 4
-}
+let yes = true
+let no = !yes
+
+console.log(no)
+
+
 
 
 
@@ -70,10 +71,9 @@ Do the following:
    3. Multiply a and b and return the answer
 */
 
-console.log(multiply(2,3))
+
 function multiply(a,b){
-  console.log(a * b)
-}
+  return a * b }
 
 
 
@@ -88,13 +88,9 @@ Do the following:
  3. Return the newly calculated age
 */
 
-function dogYears(num1, num2) {
-  return num1 * num2
+function dogYears(age) {
+  return age * 7
 }
-dogYears(20, 7)
-
-
-
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
@@ -276,4 +272,3 @@ module.exports = {
   annoyingSong,
   grade
 }
-ß
